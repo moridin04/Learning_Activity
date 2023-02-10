@@ -26,7 +26,7 @@ public class Exercise12_11 {
 		}
 		input.close();
 		
-		String s2 = s1.toString().replaceAll("John", " ");
+		String s2 = s1.toString().replaceAll(args[0], " ");
 		PrintWriter output = new PrintWriter(sourceFile);
 		output.println(s2);
 		output.close();
