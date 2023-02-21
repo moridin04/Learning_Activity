@@ -4,53 +4,37 @@ import java.util.Scanner;
 
 public class Exercise18_30 {
 	public static void main(String[] args) {
-		if (args.length != 2) {
-			System.out.println("Usage: java Exercise12_30 dirName word");
-			// args[0] = dirName
-			// args[1] = word
-			System.exit(0);
-		}
-
-		args[0] = "C:\\Users\\Neo\\Documents\\Directory";
+		args = new String[2];
+		args[0] = "C:\\Users\\Neo\\eclipse-workspace\\LearningActivity\\Chapter 18\\DirectoryExample1";
 		args[1] = "word";
-		File file = new File(args[0]);
-		search(file, args[1]);
-
+		String dirName = args[0];
+		String word = args[1];
+		File directory = new File(dirName);
+		find(directory, word);
 	}
 
-	public static void search(File file, String word) {
-		File[] files = file.listFiles();
-		long count = 0;
-		for (File f : files)
-			if (f.isDirectory())
-				count += search(f, word);
-			else
-				count++;
-		
-
-		}
-	}
-
-
-/* 
- * 		if (file.isDirectory()) {
-			File[] files = file.listFiles();
+	public static void find(File dirName, String word) {
+		if (dirName.isDirectory()) {
+			File[] files = dirName.listFiles();
 			for (File f : files) {
-				search(f, word);
-				
+				find(f, word);
 			}
- *  else {
+		} else {
 			try {
-				Scanner input = new Scanner(file);
-				long count = 0;
+				Scanner input = new Scanner(dirName);
+				int count = 0;
 				while (input.hasNextLine()) {
 					count++;
-					System.out.println(file.getName() + " " + count + " ");
+					String line = input.nextLine();
+					int index = line.indexOf(word);
+					if (index != -1) {
+						System.out.println(dirName.getName() + " = line " + count);
+					}
 				}
-
 				input.close();
 			} catch (FileNotFoundException e) {
 				e.printStackTrace();
 			}
 		}
-		*/
+	}
+}
