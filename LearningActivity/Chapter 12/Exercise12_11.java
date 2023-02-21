@@ -8,7 +8,7 @@ public class Exercise12_11 {
 			// args[0] = John
 			// args[1] = filename
 		}
-		
+
 		args[0] = "John";
 		args[1] = "C:\\Users\\Neo\\eclipse-workspace\\LearningActivity\\Chapter 12\\filename";
 
@@ -17,7 +17,7 @@ public class Exercise12_11 {
 			System.out.println("Source file " + args[1] + " does not exist");
 			System.exit(0);
 		}
-		
+
 		Scanner input = new Scanner(sourceFile);
 		StringBuilder s1 = new StringBuilder();
 		while (input.hasNext()) {
@@ -25,14 +25,12 @@ public class Exercise12_11 {
 			s1.append('\n');
 		}
 		input.close();
-		
-		String s2 = s1.toString().replaceAll(args[0], " ");
+
+		String s2 = s1.toString().replaceAll("John", " ");
 		PrintWriter output = new PrintWriter(sourceFile);
 		output.println(s2);
 		output.close();
-		
-			}
-	
-			
-			
-		}
+
+	}
+
+}
