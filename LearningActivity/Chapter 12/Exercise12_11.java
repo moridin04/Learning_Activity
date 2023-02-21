@@ -36,23 +36,3 @@ public class Exercise12_11 {
 			
 			
 		}
-
-
-
-/* 
- * 		String oldContent = "";
-		
-		BufferedReader reader = new BufferedReader(new FileReader(filename));
-		String line = reader.readLine();
-		while (line != null) {
-			oldContent = oldContent + line + System.lineSeparator();
-			line = reader.readLine();
-		}
-		
-		String newContent = oldContent.replaceAll(args[0], "");
-		FileWriter writer = new FileWriter(args[1]);
-		writer.write(newContent);
-		reader.close();
-		writer.close();
-
-		*/
