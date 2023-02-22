@@ -4,7 +4,6 @@ import java.util.Scanner;
 public class Exercise12_19 {
 	public static void main(String[] args) throws IOException {
 		int wordCount = 0;
-		@SuppressWarnings("unused")
 		int lineCount = 0;
 		
 		String URLString = "http://cs.armstrong.edu/liang/data/Lincoln.txt";
@@ -19,7 +18,6 @@ public class Exercise12_19 {
 			Scanner lineScanner = new Scanner(line);
 			while (lineScanner.hasNext()) {
 				wordCount++;
-				@SuppressWarnings("unused")
 				String word = lineScanner.next();
 			}
 			lineScanner.close();
