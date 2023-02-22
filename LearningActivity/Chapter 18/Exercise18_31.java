@@ -7,8 +7,8 @@ public class Exercise18_31 {
 	public static void main(String[] args) {
 		args = new String[3];
 		args[0] = "C:\\Users\\Neo\\eclipse-workspace\\LearningActivity\\Chapter 18\\DirectoryExample2";
-		args[1] = "newWord";
-		args[2] = "word";
+		args[1] = "word";
+		args[2] = "NewWord";
 		String dirName = args[0];
 		String oldWord = args[1];
 		String newWord = args[2];
