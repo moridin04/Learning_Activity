@@ -18,7 +18,7 @@ public class Exercise12_14 {
 		int count = 0;
 		while ((strCurrentLine = input.readLine()) != null) {
 			String[] stringArray = strCurrentLine.split(" ");
-			for (int i = 0; i <= stringArray.length; i++) {
+			for (int i = 0; i < stringArray.length; i++) {
 				total += Integer.valueOf(stringArray[i].trim());
 				count++;
 			}
