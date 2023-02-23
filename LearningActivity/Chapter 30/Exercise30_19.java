@@ -1,7 +1,4 @@
-package net.bohush.exercises.chapter32;
-
 import javax.swing.*;
-
 import java.awt.*;
 
 public class Exercise30_19 extends JApplet {
