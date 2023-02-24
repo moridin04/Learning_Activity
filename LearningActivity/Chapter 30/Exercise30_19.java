@@ -9,7 +9,7 @@ public class Exercise30_19 extends JApplet {
     private int sleepTime = 20;
     
 
-    public Exercise19() {
+    public Exercise30_19() {
         setLayout(new  GridLayout(0, 3, 0, 0));
         int[] list = new int[size];
         for (int i = 0; i < list.length; i++) {
@@ -33,7 +33,7 @@ public class Exercise30_19 extends JApplet {
 
     public static void main(String[] args) {
         JFrame frame = new JFrame("Exercise19");
-        JApplet applet = new Exercise19();
+        JApplet applet = new Exercise30_19();
         frame.add(applet);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();
