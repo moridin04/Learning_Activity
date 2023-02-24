@@ -1,7 +1,7 @@
 import java.util.concurrent.ForkJoinPool;
 import java.util.concurrent.RecursiveTask;
 
-public class Exercise15 {
+public class Exercise30_15 {
 
     public static void main(String[] args) {
         double[] list = new double[9000000];
